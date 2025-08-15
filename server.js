@@ -21,6 +21,9 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 app.post('/upload', upload.single('data'), (req, res) => {
+  if (!req.file) {
+    return res.status(400).send('Keine Datei hochgeladen.');
+  }
   res.send('Daten erfolgreich hochgeladen!');
 });
 
