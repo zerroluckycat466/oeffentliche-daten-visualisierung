@@ -30,6 +30,7 @@ app.post('/upload', upload.single('data'), (req, res) => {
   if (!req.file) {
     return res.status(400).send('Keine Datei hochgeladen.');
   }
+  // Respond with success message if file is uploaded
   res.send('Daten erfolgreich hochgeladen!');
 });
 
