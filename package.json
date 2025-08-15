@@ -1,6 +1,6 @@
 {
   "name": "oeffentliche-daten-visualisierung",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ein Tool zur Visualisierung öffentlicher Datenquellen in Deutschland, das Benutzern ermöglicht, Daten einfach zu analysieren und darzustellen.",
   "main": "server.js",
   "scripts": {
